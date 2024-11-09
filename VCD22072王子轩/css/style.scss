@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+// 引入字体
+@font-face {
+    font-family: "font1";
+    src: url("../font/Brush\ Script.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "font2";
+    src: url("../font/Trattatello.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.header {
+    border: 2px solid #efb719;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: #9b1d73;
+    box-sizing: border-box;
+    .logo {
+        width: 150px;
+        font-size: 30px;
+        font-weight: bolder;
+
+        margin: 0 auto;
+    }
+    .menus {
+        font-family: "font1";
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 28px;
+        box-sizing: border-box;
+        li {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        a {
+            color: #9b1d73;
+        }
+    }
+    .search {
+        margin-right: 20px;
+        display: flex;
+
+        img {
+            width: 20px;
+        }
+    }
+    .searchBox {
+        background-color: #f6eab9;
+        display: flex;
+        padding: 5px;
+        font-weight: 700;
+        border-radius: 20px;
+        width: 100px;
+        margin-left: 20px;
+        text {
+            color: #f6eab9;
+        }
+        margin-right: 20px;
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: none;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+}
+
+.content {
+    margin-top: 20px;
+    .left1 {
+        margin-bottom: 100px;
+        p {
+            font-weight: bolder;
+        }
+    }
+    .item {
+        background-color: #f4b92c;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        .left1 {
+            padding: 20px;
+            background: #f4b92c;
+            background-color: #f4b92c;
+            color: #991f72;
+            font-size: 30px;
+        }
+    }
+    .left {
+        margin-bottom: 20px;
+        .line {
+            width: 10px;
+            height: 100px;
+            background-color: #991f72;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+        }
+    }
+    .tip {
+        color: #991f72;
+        font-size: 14px;
+        font-weight: 980;
+        font-weight: 900;
+        margin-left: 50px;
+    }
+    .item2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        .box {
+            background-color: #efb719;
+            padding: 20px;
+            border-radius: 20px;
+            img {
+                width: 100%;
+            }
+        }
+
+        li {
+            color: #991f72;
+            font-weight: 900;
+            margin-bottom: 5px;
+            font-size: 10px;
+            &::before {
+                content: "";
+                display: inline-block;
+                margin-right: 10px;
+                width: 10px;
+                height: 10px;
+                background-color: #991f72;
+                border-radius: 50%;
+            }
+        }
+        .box2 {
+            background-color: #f99111;
+            li {
+                color: #d436aa;
+                &::before {
+                    background-color: #d436aa;
+                }
+            }
+        }
+    }
+    .tips {
+        position: absolute;
+        left: 20px;
+        z-index: 999;
+        bottom: 40px;
+    }
+    .left1 {
+        font-family: "font2";
+        padding: 20px;
+        background: #f1c252;
+        background-color: #f1c252;
+    }
+    .right {
+        background-color: #f1c252;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        height: 580px;
+        font-family: "font2";
+        overflow: hidden;
+        .text {
+            text-align: right;
+            position: absolute;
+            right: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            color: #991f72;
+        }
+        .img {
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+            img {
+                width: 300px;
+            }
+        }
+        .img2 {
+            position: absolute;
+            left: 11vw;
+            bottom: 250px;
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+.left2 {
+    font-size: 28px;
+    color: #991f72;
+}
